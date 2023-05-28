@@ -5,21 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./modern-normalize"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+   <header>
+      <!-- <div class="header-container"> -->
       <nav class="navigation">
+        <div class="flex-nav">
+        <div>
         <a class="logo link" href="./index.html"
           >Web<span class="header-studio-logo">Studio</span></a
         >
+      </div>
+        <div class="flex-nav">
+          
         <ul class="site-nav list">
+          <div class="nav-con">
           <li>
             <a class="link" href="./index.html">Studio</a>
           </li>
@@ -29,9 +34,12 @@
           <li>
             <a class="link" href="">Contacts</a>
           </li>
+        </div>
         </ul>
-      </nav>
-      <address style="font-style: normal" class="contacts">
+      </div>
+    </div>
+      <div class="flex-nav">
+      <address class="contacts">
         <ul class="contacts-nav list">
           <li>
             <a href="mailto:info@devstudio.com" class="link"
@@ -42,63 +50,98 @@
             <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
           </li>
         </ul>
+      </div>
+      </nav>
+        
       </address>
+    <!-- </div> -->
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="button" type="button">Order Service</button>
+        <div class="hero">
+          <div class="parent">
+            <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          </div>
+          
+            <button class="button" type="button">Order Service</button>
+          
+        </div>
       </section>
       <section>
         <h2 class="content-title" hidden>Content</h2>
         <ul class="feature-list list">
-          <li>
+          <div class="feature-container">
+          <div class="flex-feature">
+          <li class="feature">
             <h3 class="title">Strategy</h3>
             <p class="text">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
+        </div>
+          <div class="flex-feature">
+          <li class="feature">
             <h3 class="title">Punctuality</h3>
             <p class="text">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
+        </div>
+          <div class="flex-feature">
+          <li class="feature">
             <h3 class="title">Diligence</h3>
             <p class="text">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
+        </div>
+          <div class="flex-feature">
+          <li class="feature">
             <h3 class="title">Technologies</h3>
             <p class="text">
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
             </p>
           </li>
+        </div>
+          </div>
+        </div>
         </ul>
       </section>
       <section class="section">
+        <div class="title-container">
         <h2 class="title" style="text-align: center">What are we doing</h2>
+      </div>
         <ul class="list">
+           <div class="section-container">
+          <div class="section-item">
           <li>
             <img width="360" src="./images/computer-3.jpg" alt="Computer" />
           </li>
+        </div>
+        <div class="section-item">
           <li>
             <img width="360" src="./images/network-3.jpg" alt="Network" />
           </li>
+        </div>
+        <div class="section-item">
           <li>
             <img width="360" src="./images/smartphone-3.jpg" alt="Smartphone" />
           </li>
+        </div>
         </ul>
+      </div>
       </section>
-      <section class="team-section">
+      <div class="team-title">
         <h2 class="title" style="text-align: center">Our Team</h2>
+      </div>
+      <section class="team-section">
+        
         <ul class="team-section list">
+          <div class="team-container">
           <li class="team-member">
             <img
               width="264"
@@ -131,10 +174,12 @@
             <h3 class="subtitle">Daniel Wilson</h3>
             <p class="text">UI Designer</p>
           </li>
+        </div>
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer"> 
+      <div class="footer-container">
       <a class="logo link" href="./index.html"
         >Web<span class="footer-studio-logo">Studio</span></a
       >
@@ -142,6 +187,7 @@
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
+    </div>
     </footer>
   </body>
 </html>
