@@ -25,7 +25,7 @@ body {
 .header {
   border-bottom: 1px solid var(--background-color);
 }
-.header-cont .container {
+.header-cont {
   display: flex;
   width: 1158px;
   margin: 0 auto;
@@ -44,7 +44,7 @@ body {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  padding: 0px 156px;
+  padding: 0px 15px 0 15px;
 }
 .add-email {
   width: 153px;
@@ -69,6 +69,25 @@ body {
 .work-list,
 .people-list {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.contacts-nav {
+  display: flex;
+  gap: 40px;
 }
 /* Navigation */
 .logo {
@@ -182,6 +201,7 @@ body {
 }
 .portfolio-nav .button {
   color: var(--accent-color);
+  border: 1px solid #e7e9fc;
   background-color: var(--text-color);
 }
 .portfolio-nav .button:hover,
@@ -377,6 +397,10 @@ img {
   margin-bottom: 8px;
 }
 
+.section {
+  padding-bottom: 120px;
+}
+
 .services-list {
   padding: 0px;
 }
@@ -453,16 +477,19 @@ img {
   text-align: center;
 }
 
-.team-con {
-  width: 1440px;
-  padding-bottom: 120px;
+.team-sec {
+  padding: 120px 0;
   background-color: var(--background-color);
+  width: 1440px;
+  margin: auto;
+}
+
+.team-con {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   gap: 24px;
   justify-content: space-evenly;
-  padding-top: 120px;
 }
 .team-con .title {
   margin-bottom: 72px;
@@ -509,16 +536,20 @@ img {
   color: var(--primary-text-color);
 }
 .team-member {
-  /* width: calc((100% - 72px) / 4); */
+  width: calc((100% - 72px) / 4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--secondary-bg-color);
+  /* background-color: var(--secondary-bg-color); */
 }
 
 .name {
   width: 264px;
-  height: 120px;
-  padding: 32px 16px;
+  /* height: 120px;
+  padding: 32px 16px; */
   align-items: center;
+  background-color: var(--secondary-bg-color);
 }
 .name .subtitle {
   text-align: center;
@@ -572,6 +603,10 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 100px 0;
+}
+
+.flex-el {
+  width: calc((100% - 72px) / 4);
 }
 
 .test-container {
