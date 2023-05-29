@@ -188,15 +188,25 @@ body {
 .portfolio-nav .button:focus {
   color: var(--secondary-bg-color);
 }
+
 .services-list {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
 }
 
 img {
   display: block;
   /* width: 300px; */
+}
+.content-title {
+  visibility: hidden;
+}
+.portfolio-con {
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex-con {
@@ -300,9 +310,11 @@ img {
   border: 1px solid var(--background-color);
   border-top: none;
   margin-bottom: 8px;
+  width: 360px;
 }
 
 .feature-section {
+  flex-basis: auto;
   padding: 120px 0;
 }
 .feature-section .container {
@@ -363,6 +375,10 @@ img {
 }
 .service-class .title {
   margin-bottom: 8px;
+}
+
+.services-list {
+  padding: 0px;
 }
 .services-list .text {
   font-size: 16px;
@@ -436,26 +452,31 @@ img {
 .team-container .text {
   text-align: center;
 }
-.team-sec {
-  padding: 120px 0;
+
+.team-con {
+  width: 1440px;
+  padding-bottom: 120px;
+  background-color: var(--background-color);
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-evenly;
+  padding-top: 120px;
 }
 .team-con .title {
   margin-bottom: 72px;
 }
 
 .team-section {
-  background-color: var(--text-color);
-  width: 1440px;
   display: flex;
-
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
-}
-.team-section {
-  display: flex;
+  justify-content: center;
   gap: 24px;
+  padding: 0;
 }
+
 .section .title,
 .team-section .title {
   font-weight: 700;
@@ -488,13 +509,16 @@ img {
   color: var(--primary-text-color);
 }
 .team-member {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
   border-radius: 0px 0px 4px 4px;
   background-color: var(--secondary-bg-color);
 }
 
 .name {
+  width: 264px;
+  height: 120px;
   padding: 32px 16px;
+  align-items: center;
 }
 .name .subtitle {
   text-align: center;
@@ -541,7 +565,8 @@ img {
 }
 
 .footer {
-  /* display: flex; */
+  display: flex;
+  flex-wrap: wrap;
   width: 1440px;
   height: 312px;
   margin-left: auto;
