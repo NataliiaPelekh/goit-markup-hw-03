@@ -26,10 +26,12 @@ body {
   border-bottom: 1px solid var(--background-color);
 }
 .header-cont .container {
-  display: flex;
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.header-cont {
+  display: flex;
 }
 /* .add-container { */
 /* display: flex; */
@@ -207,9 +209,7 @@ img {
 .contacts-nav {
   display: flex;
   gap: 40px;
-  margin-left: auto;
 }
-
 .contacts-nav .link {
   font-weight: 400;
   font-size: 16px;
@@ -277,7 +277,9 @@ img {
   border: 1px solid var(--background-color);
 
   min-width: 169px;
+  height: 56px;
   border-radius: 4px;
+  border: none;
 }
 .services-list {
   display: flex;
@@ -323,7 +325,7 @@ img {
 .feature {
   width: calc((100% - 72px) / 4);
 }
-/* Feature section */
+
 .feature-list .title {
   font-weight: 500;
   font-size: 20px;
@@ -332,12 +334,15 @@ img {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
+
 .feature-list .text {
   font-size: 16px;
   line-height: 1.5;
   color: var(--primary-text-color);
 }
-
+.section {
+  padding-bottom: 120px;
+}
 .services {
   padding: 96px 0 120px 0;
 }
@@ -348,6 +353,12 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+}
+.service-name {
+  width: calc((100% - 48px) / 3);
+}
+.service-class .title {
+  margin-bottom: 8px;
 }
 .services-list .text {
   font-size: 16px;
@@ -522,7 +533,7 @@ img {
   height: 312px;
   margin-left: auto;
   margin-right: auto;
-  padding: 100px;
+  padding: 100px 0;
 }
 
 .test-container {
