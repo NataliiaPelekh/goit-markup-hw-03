@@ -13,6 +13,7 @@
   --secondary-bg-color: #ffffff;
   --text-color: #f4f4fd;
   --font-family: Roboto, sans-serif;
+  --background-color: #e7e9fc;
 }
 
 body {
@@ -21,7 +22,15 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.02em;
 }
-
+.header {
+  border-bottom: 1px solid var(--background-color);
+}
+.header-cont .container {
+  display: flex;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 /* .add-container { */
 /* display: flex; */
 /* width: ; */
@@ -70,6 +79,7 @@ body {
 }
 .logo {
   display: flex;
+  margin-right: 76px;
 }
 .link {
   text-decoration: none;
@@ -136,7 +146,11 @@ body {
 
 .site-nav {
   display: flex;
+  gap: 40px;
   margin-left: 76px;
+}
+.navg {
+  padding: 24px 0;
 }
 .list {
   list-style: none;
@@ -156,6 +170,10 @@ body {
   color: var(--hover-color);
 }
 .portfolio-nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
   list-style: none;
 }
 .portfolio-nav .button {
@@ -173,6 +191,7 @@ body {
 }
 
 img {
+  display: block;
   width: 300px;
 }
 
@@ -222,6 +241,10 @@ img {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  max-width: 496px;
+}
+.sec {
+  padding: 188px 0;
 }
 .parent {
   text-align: center;
@@ -230,13 +253,14 @@ img {
   margin-right: auto;
 }
 
-.child {
-  text-align: center;
-  margin-bottom: 188px;
-}
+/* .child { */
+/* text-align: center; */
+/* margin-bottom: 188px; */
+/* } */
 
 .button:hover,
 .button:focus {
+  border: 1px solid transparent;
   background-color: var(--hover-color);
 }
 .button {
@@ -248,14 +272,36 @@ img {
   cursor: pointer;
   color: var(--secondary-bg-color);
   background-color: var(--accent-color);
-  padding: 16px 32px;
-  border-radius: 5px;
-  border: none;
-}
 
+  padding: 12px 24px;
+  border: 1px solid var(--background-color);
+
+  min-width: 169px;
+  border-radius: 4px;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
 .services-list .list {
   margin: 0px;
 }
+.service-name {
+  width: calc((100% - 48px) / 3);
+}
+.service-class {
+  padding: 32px 16px;
+  border: 1px solid var(--background-color);
+  border-top: none;
+  margin-bottom: 8px;
+}
+
+.feature-section {
+  padding: 120px 0;
+}
+
 .feature-container {
   display: flex;
   width: 1128px;
@@ -269,11 +315,20 @@ img {
 .flex-feature:not(:last-child) {
   margin-right: 24px;
 }
+
+.feature-list {
+  display: flex;
+  gap: 24px;
+}
+.feature {
+  width: calc((100% - 72px) / 4);
+}
 /* Feature section */
 .feature-list .title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
@@ -282,6 +337,11 @@ img {
   line-height: 1.5;
   color: var(--primary-text-color);
 }
+
+.services {
+  padding: 96px 0 120px 0;
+}
+
 .services-list .title {
   font-weight: 500;
   font-size: 20px;
@@ -305,14 +365,30 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.title-container {
+.section-cont {
+  padding-bottom: 120px;
+}
+
+.section-cont .title {
+  margin-bottom: 72px;
+}
+
+.section-cont .list {
+  display: flex;
+  gap: 24px;
+}
+
+.section-image {
+  width: calc((100% - 48px) / 3);
+}
+/* .title-container {
   display: block;
   width: 323px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
   margin-top: 120px;
-}
+} */
 
 .section-item {
   display: flex;
@@ -339,6 +415,12 @@ img {
 .team-container .text {
   text-align: center;
 }
+.team-sec {
+  padding: 120px 0;
+}
+.team-con .title {
+  margin-bottom: 72px;
+}
 
 .team-section {
   background-color: var(--text-color);
@@ -348,6 +430,10 @@ img {
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
+}
+.team-section .list {
+  display: flex;
+  gap: 24px;
 }
 .section .title,
 .team-section .title {
@@ -381,10 +467,28 @@ img {
   color: var(--primary-text-color);
 }
 .team-member {
-  background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--secondary-bg-color);
+}
+
+.name {
+  padding: 32px 16px;
+}
+.name .subtitle {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.name .text {
+  text-align: center;
 }
 .footer {
+  padding: 100px 0;
   background-color: var(--title-text-color);
+}
+.footer-container .logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer .logo {
   font-family: "Raleway", sans-serif;

@@ -5,40 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./modern-normalize"
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-   <header>
-      <!-- <div class="header-container"> -->
+   <header class="header">
+      <div class="header-cont container">
       <nav class="navigation">
-        <div class="flex-nav">
-        <div>
+        <!-- <div class="flex-nav"> -->
+        <!-- <div> -->
         <a class="logo link" href="./index.html"
           >Web<span class="header-studio-logo">Studio</span></a
         >
-      </div>
-        <div class="flex-nav">
+      <!-- </div> -->
+        <!-- <div class="flex-nav"> -->
           
         <ul class="site-nav list">
-          <div class="nav-con">
+          <!-- <div class="nav-con"> -->
           <li>
-            <a class="link" href="./index.html">Studio</a>
+            <a class="navg link" href="./index.html">Studio</a>
           </li>
           <li>
-            <a class="link" href="./portfolio.html">Portfolio</a>
+            <a class="navg link" href="./portfolio.html">Portfolio</a>
           </li>
           <li>
-            <a class="link" href="">Contacts</a>
+            <a class="navg link" href="">Contacts</a>
           </li>
-        </div>
+        <!-- </div> -->
         </ul>
-      </div>
-    </div>
-      <div class="flex-nav">
+      <!-- </div> -->
+    <!-- </div> -->
+      <!-- <div class="flex-nav"> -->
       <address class="contacts">
         <ul class="contacts-nav list">
           <li>
@@ -50,28 +50,29 @@
             <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
           </li>
         </ul>
-      </div>
-      </nav>
-        
-      </address>
-    <!-- </div> -->
+      <!-- </div> -->
+     </address>
+    </nav>
+    </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="hero">
-          <div class="parent">
+      <section class="sec hero">
+        <div class="hero container">
+          <!-- <div class="parent"> -->
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          </div>
+          <!-- </div> -->
           
             <button class="button" type="button">Order Service</button>
           
         </div>
       </section>
-      <section>
-        <h2 class="content-title" hidden>Content</h2>
+      
+      <section class="feature-section">
+        <div class="container">
+        <h2 class="content-title" .visually-hidden>Content</h2>
         <ul class="feature-list list">
-          <div class="feature-container">
-          <div class="flex-feature">
+          <!-- <div class="feature-container"> -->
+          <!-- <div class="flex-feature"> -->
           <li class="feature">
             <h3 class="title">Strategy</h3>
             <p class="text">
@@ -79,8 +80,8 @@
               perfect and creative solution.
             </p>
           </li>
-        </div>
-          <div class="flex-feature">
+        <!-- </div> -->
+          <!-- <div class="flex-feature"> -->
           <li class="feature">
             <h3 class="title">Punctuality</h3>
             <p class="text">
@@ -88,8 +89,8 @@
               within the shortest possible time.
             </p>
           </li>
-        </div>
-          <div class="flex-feature">
+        <!-- </div> -->
+          <!-- <div class="flex-feature"> -->
           <li class="feature">
             <h3 class="title">Diligence</h3>
             <p class="text">
@@ -97,8 +98,8 @@
               growth opportunities and minimize risk.
             </p>
           </li>
-        </div>
-          <div class="flex-feature">
+        <!-- </div> -->
+          <!-- <div class="flex-feature"> -->
           <li class="feature">
             <h3 class="title">Technologies</h3>
             <p class="text">
@@ -106,55 +107,63 @@
               deep passion for problem-solving.
             </p>
           </li>
-        </div>
-          </div>
+        <!-- </div> -->
+          <!-- </div> -->
         </div>
         </ul>
       </section>
       <section class="section">
-        <div class="title-container">
+        <div class="section-cont container">
         <h2 class="title" style="text-align: center">What are we doing</h2>
-      </div>
+      
         <ul class="list">
-           <div class="section-container">
-          <div class="section-item">
-          <li>
+           <!-- <div class="section-container"> -->
+          <!-- <div class="section-item"> -->
+          <li class="section-image">
             <img width="360" src="./images/computer-3.jpg" alt="Computer" />
           </li>
-        </div>
-        <div class="section-item">
-          <li>
+        <!-- </div> -->
+        <!-- <div class="section-item"> -->
+          <li class="section-image">
             <img width="360" src="./images/network-3.jpg" alt="Network" />
           </li>
-        </div>
-        <div class="section-item">
-          <li>
+        <!-- </div> -->
+        <!-- <div class="section-item"> -->
+          <li class="section-image">
             <img width="360" src="./images/smartphone-3.jpg" alt="Smartphone" />
           </li>
-        </div>
+        <!-- </div> -->
         </ul>
-      </div>
+      <!-- </div> -->
       </section>
-      <div class="team-title">
+
+
+      <section class="team-sec">
+      <div class="team-con container">
         <h2 class="title" style="text-align: center">Our Team</h2>
-      </div>
-      <section class="team-section">
+      
+  
+      <!-- <section class="team-section"> -->
         
         <ul class="team-section list">
-          <div class="team-container">
+          <!-- <div class="team-container"> -->
           <li class="team-member">
             <img
               width="264"
               src="./images/mark-guerrero.jpg"
               alt="Mark Guerrero"
             />
+            <div class="name">
             <h3 class="subtitle">Mark Guerrero</h3>
             <p class="text">Product Designer</p>
+          </div>
           </li>
           <li class="team-member">
             <img width="264" src="./images/tom-ford.jpg" alt="Tom Ford" />
+            <div class="name">
             <h3 class="subtitle">Tom Ford</h3>
             <p class="text">Frontend Developer</p>
+          </div>
           </li>
           <li class="team-member">
             <img
@@ -162,8 +171,10 @@
               src="./images/camila-garcia.jpg"
               alt="Camila Garcia"
             />
+            <div class="name">
             <h3 class="subtitle">Camila Garcia</h3>
             <p class="text">Marketing</p>
+          </div>
           </li>
           <li class="team-member">
             <img
@@ -171,15 +182,19 @@
               src="./images/daniel-wilson.jpg"
               alt="Daniel Wilson"
             />
+            <div class="name">
             <h3 class="subtitle">Daniel Wilson</h3>
             <p class="text">UI Designer</p>
+          </div>
           </li>
-        </div>
+        <!-- </div> -->
         </ul>
-      </section>
+      </div>
+      <!-- </section> -->
+    </section>
     </main>
     <footer class="footer"> 
-      <div class="footer-container">
+      <div class="footer-container container">
       <a class="logo link" href="./index.html"
         >Web<span class="footer-studio-logo">Studio</span></a
       >
