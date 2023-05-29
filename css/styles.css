@@ -30,11 +30,18 @@ ul {
 .header {
   border-bottom: 1px solid var(--background-color);
 }
+
+.header-cont .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-cont {
   display: flex;
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+  justify-content: space-between;
 }
 
 /* .add-container { */
@@ -44,10 +51,10 @@ ul {
 
 .navigation {
   display: flex;
-  width: 1440px;
+  /* width: 1440px; */
   align-items: center;
   justify-content: space-between;
-  margin-left: auto;
+  /* margin-left: auto; */
   margin-right: auto;
   padding: 0px 15px 0 15px;
 }
