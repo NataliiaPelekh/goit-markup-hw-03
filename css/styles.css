@@ -336,7 +336,7 @@ img {
 
 .ord {
   display: block;
-  max-width: 169px;
+  min-width: 169px;
   height: 56px;
   margin: auto;
 }
