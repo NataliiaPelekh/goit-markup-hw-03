@@ -31,6 +31,7 @@ ul {
 .container {
   width: 1158px;
   margin: auto;
+  padding: 0 15px;
 }
 
 .header {
@@ -48,10 +49,11 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-.container {
+/* .container {
   width: 1158px;
   padding: 0 15px;
-}
+  margin: auto;
+} */
 
 /* .add-container { */
 /* display: flex; */
@@ -358,10 +360,10 @@ img {
   flex-basis: auto;
   padding: 120px 0;
 }
-.container {
+/* .container {
   width: 1158px;
   margin: auto;
-}
+} */
 
 .feature-container {
   display: flex;
