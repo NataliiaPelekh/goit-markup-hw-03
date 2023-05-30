@@ -328,11 +328,19 @@ img {
 /* margin-bottom: 188px; */
 /* } */
 
-.button:hover,
-.button:focus {
+.hov:hover,
+.hov:focus {
   border: 1px solid transparent;
   background-color: var(--hover-color);
 }
+
+.ord {
+  display: block;
+  max-width: 169px;
+  height: 56px;
+  margin: auto;
+}
+
 .button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
