@@ -37,11 +37,11 @@ ul {
   border-bottom: 1px solid var(--background-color);
 }
 
-.header-cont .container {
+/* .header-cont .container {
   display: flex;
   justify-content: space-between;
   width: 1158px;
-}
+} */
 
 .header-cont {
   display: flex;
